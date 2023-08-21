@@ -2,6 +2,9 @@
 
 Welcome to the Rock, Paper, Scissors game! This is a simple web-based implementation of the classic game where players can compete against the computer by choosing rock, paper, or scissors.
 
+## Play the Game
+
+To play the game, [click here](https://your-username.github.io/rock-paper-scissors-game/).
 
 ## Features
 
