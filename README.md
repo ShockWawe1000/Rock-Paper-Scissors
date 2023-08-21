@@ -29,7 +29,7 @@ To play the game, [click here](https://shockwawe1000.github.io/Rock-Paper-Scisso
 
 ## Credits
 
-- Developed by Edis Usein
+- Developed by ShockWawe1000
 - Game inspiration from the classic Rock, Paper, Scissors game.
 
 
