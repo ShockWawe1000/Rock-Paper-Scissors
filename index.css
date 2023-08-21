@@ -1,17 +1,158 @@
 
 
 
-#para1
-{
-    margin-top: 200px;
-   text-align: center;
-}
-#start
-{
-    border-radius: 3px;
-border-color: red;
+html{
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    margin: auto;
-    padding: 20px;
+    flex-direction: column;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'helvetica neue', sans-serif;
+    background-color: #8DABAF;
    
+}
+
+.title.text{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 30px;
+   
+    background-color: #0c1c2d ;
+   
+}
+.emoji{
+    font-size: 200px;
+    
+}
+.text{
+    text-align: center;
+    font-size: 30px;
+    font-weight:600;
+    color: #ceb303;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+    
+}
+
+.hands{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+    
+    
+}
+
+.hand {
+    border: 10px black solid;
+    border-radius: 30px;
+    min-width: 240px;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    
+}
+
+.gameState
+{
+    text-align: center;
+    font-size: 40px;
+    
+    
+}
+
+#footer{
+    text-align: end;
+    font-size: 20px;
+    font-weight:600;
+    color: #ceb303;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+    background-color: #0c1c2d;
+    padding: 20px;
+}
+
+.gameWindow{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    min-height: 100vh;
+    
+    
+}
+
+.hand.hover
+{
+   background: #5782af;
+   transform: rotate(-20deg);
+   padding: 10px;
+}
+
+
+.hand.selected
+{
+padding: 20px;
+background-color: rgb(68, 205, 43);
+transition: 0.05s;
+}
+
+.hand.selected
+{
+padding: 20px;
+background-color: rgb(68, 205, 43);
+transition: 0.05s;
+}
+
+.hand.computerSelected
+{
+padding: 20px;
+background-color: rgb(218, 48, 48);
+transition: 0.05s;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gameView {
+    display: none;
+    flex-direction: column;
+    justify-content:space-between;
+    min-height: 80vh;
+ 
+}
+
+.end {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 40vh;
+}
+
+.main {
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 40vh;
+}
+
+.playBtn {
+    border: solid 10px black;
+    background-color: #5782af;
+    align-self: center;
+    border-radius: 18px;
+    padding: 40px 70px;
+    font-weight: 600;
+    font-size: 80px;
+    transition: 0.2s;
+}
+
+.btnSelected{
+    background-color: rgb(18, 167, 231);
+
 }
