@@ -1,0 +1,17 @@
+
+
+
+#para1
+{
+    margin-top: 200px;
+   text-align: center;
+}
+#start
+{
+    border-radius: 3px;
+border-color: red;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+   
+}
