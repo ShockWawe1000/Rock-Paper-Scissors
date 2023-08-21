@@ -4,7 +4,7 @@ Welcome to the Rock, Paper, Scissors game! This is a simple web-based implementa
 
 ## Play the Game
 
-To play the game, [click here](https://your-username.github.io/rock-paper-scissors-game/).
+To play the game, [click here](https://shockwawe1000.github.io/Rock-Paper-Scissors/).
 
 ## Features
 
