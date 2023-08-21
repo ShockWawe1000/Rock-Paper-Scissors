@@ -214,13 +214,13 @@ function startGame()
           playerScoreDisplay.innerHTML=`Player:${playerScore}`;
           computerScoreDisplay.innerHTML=`Computer:${computerScore}`;
           
-          if (playerScore >= 2) {
+          if (playerScore >= 5) {
             endMessage.innerHTML = (`Congrats, player won the game!`)
             gameWindow.style.display = "none";
            endWindow.style.display = "flex";
            
           }
-          else if (computerScore >= 2) {
+          else if (computerScore >= 5) {
             endMessage.innerHTML = (`Computer won the game!`)
            gameWindow.style.display = "none";
            endWindow.style.display = "flex";
