@@ -58,7 +58,7 @@
         <div class="gameState text"> Choose your hand!</div>
     </div>
     <div class="end menu">
-      
+      <button class="playBtn text ">Play Again?</button>
       <div class="text endMessage">Who won?</div>
   </div>
     <div id="footer"> Made by ShockWawe1000</div>
@@ -106,7 +106,6 @@
 
     var playerScore = 0;
     var computerScore = 0;
-    var gameIsActive = true;
     var currentRound = 1;
     
     const hand = document.querySelectorAll('.hand');
@@ -135,16 +134,13 @@
         gameWindow.style.display = "flex";
         playerScore = 0;
         computerScore = 0;
-        gameIsActive = true;
         startGame();
     }
     ))
 
 function startGame()
 {
-  if (!gameIsActive) {
-    return;
-  }
+  
     hand.forEach(hand => hand.addEventListener('mouseover', function (e) {
       hand.classList.add("hover")
     }))
@@ -214,16 +210,14 @@ function startGame()
           playerScoreDisplay.innerHTML=`Player:${playerScore}`;
           computerScoreDisplay.innerHTML=`Computer:${computerScore}`;
           
-          if (playerScore >= 5) {
-            endMessage.innerHTML = (`Congrats, player won the game!`)
-            gameWindow.style.display = "none";
-           endWindow.style.display = "flex";
+          if (playerScore >= 2) {
+            endGame();
+            return;
            
           }
-          else if (computerScore >= 5) {
-            endMessage.innerHTML = (`Computer won the game!`)
-           gameWindow.style.display = "none";
-           endWindow.style.display = "flex";
+          else if (computerScore >= 2) {
+            endGame();
+            return;
            
           }
           
@@ -235,11 +229,41 @@ function startGame()
     }))
     var clickable = false;
 
-  if (gameIsActive==false)
-  return;
+ 
   }
   
+  function endGame() {
+  if (playerScore >= 2) {
+    endMessage.innerHTML = (`Congrats, player won the game!`)
+  } else if (computerScore >= 2) {
+    endMessage.innerHTML = (`Computer won the game!`)
+  }
 
+  gameWindow.style.display = "none";
+  endWindow.style.display = "flex";
+
+  startGameBtn.forEach(btn=>btn.addEventListener('mouseover', function (e) {
+      btn.classList.add("btnSelected")
+      console.log(btn)
+    }))
+
+    startGameBtn.forEach(btn=>btn.addEventListener('mouseleave', function (e) {
+      btn.classList.remove("btnSelected")
+    }))
+    startGameBtn.forEach(selHand => selHand.addEventListener('click', function (e)
+    {
+        endWindow.style.display = "none";
+        gameWindow.style.display = "flex";
+        playerScore = 0;
+        computerScore = 0;
+        currentRound = 1;
+        round.innerHTML=`Round ${currentRound}!`;
+        playerScoreDisplay.innerHTML=`Player:${playerScore}`;
+        computerScoreDisplay.innerHTML=`Computer:${computerScore}`;
+        
+    }
+    ))
+}
 
    
   </script>

@@ -1,5 +1,7 @@
 
-
+:root{
+    --headerFooterColor: #122d48e2;
+}
 
 html{
     margin: 0px;
@@ -11,8 +13,10 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'helvetica neue', sans-serif;
-    background-color: #8DABAF;
-   
+    background-color: #6b98cc;
+    background-image: url("background.png");
+  background-repeat: repeat;
+  background-size: 80px;
 }
 
 .title.text{
@@ -20,8 +24,9 @@ body {
     font-weight: 700;
     font-size: 50px;
     padding: 30px;
-   
-    background-color: #0c1c2d ;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    background-color: var(--headerFooterColor) ;
    
 }
 .emoji{
@@ -29,9 +34,11 @@ body {
     
 }
 .text{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     text-align: center;
     font-size: 30px;
-    font-weight:600;
+    font-weight:800;
     color: #ceb303;
     text-shadow: 3px 3px 7px rgba(0,0,0,0.5);
     
@@ -55,7 +62,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    
+    text-shadow: 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .gameState
@@ -72,7 +80,7 @@ body {
     font-weight:600;
     color: #ceb303;
     text-shadow: 3px 3px 7px rgba(0,0,0,0.5);
-    background-color: #0c1c2d;
+    background-color: var(--headerFooterColor);
     padding: 20px;
 }
 
